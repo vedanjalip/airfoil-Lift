@@ -8,6 +8,7 @@ This project estimates the lift force per unit wingspan acting on an airfoil (AR
 
 ## Conditions
 
-Elevation of airfoil above sea level = 10000 m    <br>
+Elevation of airfoil above sea level = 10000 m    
+<br>
 Ambient Temperature (ISA)            = 223.252 K      <br>
 Ambient Pressure (ISA)               = 2644.527 N/m^-2   <br>
