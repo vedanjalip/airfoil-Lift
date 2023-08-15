@@ -6,17 +6,10 @@ This project estimates the lift force per unit wingspan acting on an airfoil (AR
 
 *Source: https://perso.univ-rennes1.fr/laurent.blanchard/Profils/arad13bl/index.html*
 <br>
-The lift force is calculated using the following equation:
+The lift force per unit wingspan can be estimated using the following equation:
 <br>
-The lift force (\(F_{\text{lift}}\)) acting on an airfoil can be approximated using the following equation:
+![Lift per Unit Wingspan Equation](https://render.githubusercontent.com/render/math?math=Lift%20per%20Unit%20Wingspan%20=%20\frac{1}{2}%20\cdot%20C_L%20\cdot%20\rho%20\cdot%20V^2%20\cdot%20A)
 
-\[ F_{\text{lift}} = \frac{1}{2} \cdot C_L \cdot \rho \cdot V^2 \cdot A \]
-<br>
-Where:
-- \(C_L\) is the coefficient of lift for the airfoil.
-- \(\rho\) is the air density.
-- \(V\) is the velocity of the airflow relative to the airfoil.
-- \(A\) is the reference area (wing area).
 
 ## Conditions
 
