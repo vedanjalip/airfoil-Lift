@@ -1,6 +1,8 @@
 # airfoil-Lift
 
-# This project estimates the lift force per unit wingspan acting on an airfoil (ARA - D 13%) under the following conditions:
+This project estimates the lift force per unit wingspan acting on an airfoil (ARA - D 13%).
+
+![ARA - D 13%]()
 
 
 ## Conditions
