@@ -2,7 +2,7 @@
 
 This project estimates the lift force per unit wingspan acting on an airfoil (NACA 23012 12%).
 
-![NACA 23012 12%](profil.jpg) <br>
+![NACA 23012 12%](naca23012 (1).gif) <br>
 
 *Source: *
 <br>
