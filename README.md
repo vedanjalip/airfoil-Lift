@@ -31,7 +31,8 @@ Wingspan is the length of the lateral extent of the airfoil.
 Elevation of airfoil above sea level = 10000 m    
 Ambient Temperature (ISA)            = 223.252 K      
 Ambient Pressure (ISA)               = 2644.527 N/m^-2   
-Liquid Density                       = 800 kg*m^-3
+Liquid density in Pitot tube column  = 1000 kg*m^-3
+Angle of attack                      = 0 degrees
 
 ## Inputs
 The inputs and their ranges are:
