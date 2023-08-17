@@ -47,8 +47,8 @@ double getReynoldsNumber(double density, double velocity, double chordLength, do
 double getCL(double ReynoldsNumber)
 {  
     // Cl : Lift coefficient
-    // http://airfoiltools.com/airfoil/details?airfoil=naca23012-il#polars
-    // Initialise Lookup table for given airfoil; fixed Mach number and angle of attack (zero degrees)
+    // Data obtained from: http://airfoiltools.com/airfoil/details?airfoil=naca23012-il#polars
+    // Making use of a Lookup table for given airfoil; fixed Mach number and angle of attack (= zero degrees)
     // Estimation of lift coefficient by linear interpolation/extrapolation on non-uniform empirical data
     
     // ReyNum[] = {50000, 100000, 200000, 500000, 1000000};
