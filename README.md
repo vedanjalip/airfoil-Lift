@@ -26,13 +26,24 @@ Lift per unit span = 0.5  * air_density * velocity^2 * lift_coefficient * chord_
 where dynamic pressure = 0.5 * air_density * velocity^2; It is a measure of the force exerted by a fluid due to its motion on a surface. 
 Wingspan is the length of the lateral extent of the airfoil.
 
-
 ## Conditions
 
 Elevation of airfoil above sea level = 10000 m    
 Ambient Temperature (ISA)            = 223.252 K      
 Ambient Pressure (ISA)               = 2644.527 N/m^-2   
 Liquid Density                       = 800 kg*m^-3
+
+## Inputs
+The inputs and their ranges are:
+-	`ambientTemperature`:
+-	`ambientPressure`   :
+-	`chordLength`       :
+-	`deltaColumnHeight` :
+
+The empirical data[^2]  
+
+## Outputs
+
 
 [^1]: https://m-selig.ae.illinois.edu/ads/afplots/naca23012.gif
 [^2]: http://airfoiltools.com/airfoil/details?airfoil=naca23012-il
