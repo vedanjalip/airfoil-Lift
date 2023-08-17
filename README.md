@@ -1,8 +1,8 @@
 # airfoil-Lift
 
-This project estimates the lift force per unit wingspan acting on an airfoil (ARA - D 13%).
+This project estimates the lift force per unit wingspan acting on an airfoil (NACA 23012 12%).
 
-![ARA - D 13%](profil.jpg) <br>
+![NACA 23012 12%](profil.jpg) <br>
 
 *Source: https://perso.univ-rennes1.fr/laurent.blanchard/Profils/arad13bl/index.html*
 <br>
