@@ -4,7 +4,7 @@ This project estimates the lift force per unit wingspan acting on an airfoil (NA
 
 ![NACA 23012 12%](profil.jpg) <br>
 
-*Source: https://perso.univ-rennes1.fr/laurent.blanchard/Profils/arad13bl/index.html*
+*Source: *
 <br>
 The lift force per unit wingspan can be estimated using the following equation:
 <br>
