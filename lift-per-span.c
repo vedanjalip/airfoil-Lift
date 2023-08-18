@@ -15,9 +15,9 @@ void loadInputs(double* altitude, double* ambientTemperature, double* ambientPre
     *altitude = 10.0;
     *ambientTemperature = 281.65;   // (ISA) 
     *ambientPressure = 88375.17;     // ISA
-    *chordLength = UxHwDoubleUniformDist(0.095,0.15);
+    *chordLength = 0.1;
     // TODO range
-   *deltaColumnHeight = UxHwDoubleUniformDist(0.056,0.109);
+   *deltaColumnHeight = 0.075;
 
 }
 
@@ -69,13 +69,13 @@ double getCL(double ReynoldsNumber)
         interpolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(interpolatedLinearCL > interpolatedParaCL)
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedParaCL,interpolatedLinearCL);
+            interpolatedCL = mean(interpolatedParaCL,interpolatedLinearCL);
             
         }
 
         else
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedLinearCL,interpolatedParaCL);
+            interpolatedCL = mean(interpolatedLinearCL,interpolatedParaCL);
         }
     }
     
@@ -91,12 +91,12 @@ double getCL(double ReynoldsNumber)
         interpolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(interpolatedLinearCL > interpolatedParaCL)
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedParaCL,interpolatedLinearCL);
+            interpolatedCL = mean(interpolatedParaCL,interpolatedLinearCL);
         }
 
         else
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedLinearCL,interpolatedParaCL);
+            interpolatedCL = mean(interpolatedLinearCL,interpolatedParaCL);
         }
     }
     
@@ -112,12 +112,12 @@ double getCL(double ReynoldsNumber)
         interpolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(interpolatedLinearCL > interpolatedParaCL)
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedParaCL,interpolatedLinearCL);
+            interpolatedCL = mean(interpolatedParaCL,interpolatedLinearCL);
         }
 
         else
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedLinearCL,interpolatedParaCL);
+            interpolatedCL = mean(interpolatedLinearCL,interpolatedParaCL);
         }
     }
     
@@ -133,12 +133,12 @@ double getCL(double ReynoldsNumber)
         interpolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(interpolatedLinearCL > interpolatedParaCL)
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedParaCL,interpolatedLinearCL);
+            interpolatedCL = mean(interpolatedParaCL,interpolatedLinearCL);
         }
 
         else
         {
-            interpolatedCL = UxHwDoubleUniformDist(interpolatedLinearCL,interpolatedParaCL);
+            interpolatedCL = mean(interpolatedLinearCL,interpolatedParaCL);
         }
     }
     
@@ -157,12 +157,12 @@ double getCL(double ReynoldsNumber)
         extrapolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(extrapolatedLinearCL > extrapolatedParaCL)
         {
-            extrapolatedCL = UxHwDoubleUniformDist(extrapolatedParaCL,extrapolatedLinearCL);
+            extrapolatedCL = mean(extrapolatedParaCL,extrapolatedLinearCL);
         }
 
         else
         {
-            extrapolatedCL = UxHwDoubleUniformDist(extrapolatedLinearCL,extrapolatedParaCL);
+            extrapolatedCL = mean(extrapolatedLinearCL,extrapolatedParaCL);
         }
         printf("\nCl = %f", extrapolatedCL);
         return extrapolatedCL; 
@@ -180,12 +180,12 @@ double getCL(double ReynoldsNumber)
         extrapolatedParaCL = sqrt(4*a*ReynoldsNumber + c); 
         if(extrapolatedLinearCL > extrapolatedParaCL)
         {
-            extrapolatedCL = UxHwDoubleUniformDist(extrapolatedParaCL,extrapolatedLinearCL);
+            extrapolatedCL = mean(extrapolatedParaCL,extrapolatedLinearCL);
         }
 
         else
         {
-            extrapolatedCL = UxHwDoubleUniformDist(extrapolatedLinearCL,extrapolatedParaCL);
+            extrapolatedCL = mean(extrapolatedLinearCL,extrapolatedParaCL);
         }
         printf("\nCl = %f", extrapolatedCL);
         return extrapolatedCL;
