@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <uxhw.h>
 
 // All quantities are in SI units.
 
