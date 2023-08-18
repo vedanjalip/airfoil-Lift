@@ -13,18 +13,16 @@ const double densityLiquid = 1000;  //  Liquid inside Pitot tube column
 void loadInputs(double* altitude, double* ambientTemperature, double* ambientPressure, double* chordLength, double* deltaColumnHeight)
 {
     *altitude = 10.0;
-    *ambientTemperature = 281.65;   // (ISA) 
+    *ambientTemperature = 281.65;   // ISA 
     *ambientPressure = 88375.17;     // ISA
+   
     *chordLength = UxHwDoubleUniformDist(0.095,0.15);
-    // TODO range
-   *deltaColumnHeight = UxHwDoubleUniformDist(0.056,0.109);
+    *deltaColumnHeight = UxHwDoubleUniformDist(0.056,0.109);
 
 }
 
 double getDensity(double ambientTemperature, double ambientPressure)
 {
-
-    // printf("\nInside density fn: ambient temp and pressure  %f \t %f \t %f", ambientTemperature, ambientPressure);
     double density;
     density = ambientPressure / (R * ambientTemperature);
     printf("\n Density = %f", density);
@@ -201,7 +199,6 @@ double getVelocity(double deltaColumnHeight, double densityAir)
 
     v = sqrt(2 * g * deltaColumnHeight * (densityLiquid/densityAir));
     printf("\n Velocity = %f", v);
-    //v = sqrt(2*dynPressure/getDensity(temp,altitude));
     return v;
 }
 
@@ -209,7 +206,6 @@ double getVelocity(double deltaColumnHeight, double densityAir)
 double getLift(double altitude, double ambientTemperature, double ambientPressure, double deltaColumnHeight, double chordLength)
 {
     double densityAir, liftCoefficient, lift, reynoldsNumber, velocity;
-//    printf("\nInside lift fn - ambient temp and pressure %f \t %f", ambientTemperature, ambientPressure);
     densityAir = getDensity(ambientTemperature,ambientPressure);
     velocity = getVelocity(deltaColumnHeight, densityAir);
     reynoldsNumber = getReynoldsNumber(densityAir, velocity, chordLength, ambientTemperature);
@@ -218,13 +214,11 @@ double getLift(double altitude, double ambientTemperature, double ambientPressur
     return lift;
 }
 
-int main() {
-    
+int main() 
+{
     double altitude, ambientTemperature, ambientPressure, chordLength;
     double deltaColumnHeight, liftPerSpan;
-    // TODO
     loadInputs(&altitude, &ambientTemperature, &ambientPressure, &chordLength, &deltaColumnHeight);
-    
     printf("ambientTemp = %f \t ambientPressure = %f", ambientTemperature, ambientPressure);
     liftPerSpan = getLift(altitude, ambientTemperature, ambientPressure, deltaColumnHeight,chordLength);
     printf("\nLift per span = %.2f", liftPerSpan);
